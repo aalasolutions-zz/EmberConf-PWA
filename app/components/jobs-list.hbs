@@ -1,8 +1,12 @@
-<input type="file" accept="image/*" capture="camera" />
-<button {{on 'click' this.vibrate}}> Viberate </button>
-{{#each this.positions as |job|}}
-  <strong>Title</strong>: {{job.title}} <br />
-  <strong>Type</strong>: {{job.type}} <br />
-  <strong>Location</strong>: {{job.location}} <br />
-  <hr />
-{{/each}}
+<div class="ui relaxed divided list">
+  {{#each this.positions as |job|}}
+    <LinkTo @route="details" @tag="div" @class="item" @model={{job.id}}>
+      <i class="large github middle aligned icon"></i>
+      <div class="content">
+        <a class="header">{{job.title}}</a>
+        <div class="description">{{job.type}}</div>
+        <div class="description">{{job.location}}</div>
+      </div>
+    </LinkTo>
+  {{/each}}
+</div>

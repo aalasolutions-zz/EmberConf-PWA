@@ -6,20 +6,18 @@ import { action } from '@ember/object';
 export default class JobsListComponent extends Component {
   @service store;
 
-  @tracked positions = this.store.findAll('job');
 
-  constructor(some, args) {
-    super(some, args);
+  @tracked positions = this.args.model;
+  @tracked positions = this.store.peekAll('job');
+  //
+  // constructor(some, args) {
+  //   super(some, args);
+  //   navigator.vibrate(200); // vibrate for 200ms
+  // }
 
-
-    navigator.vibrate(200); // vibrate for 200ms
-
-  }
-
-  @action
-  vibrate(){
-    console.log(window.navigator);
-    navigator.vibrate(200); // vibrate for 200ms
-
-  }
+  // @action
+  // vibrate(){
+  //   console.log(window.navigator);
+  //   navigator.vibrate(200); // vibrate for 200ms
+  // }
 }

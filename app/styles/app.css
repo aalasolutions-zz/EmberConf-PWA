@@ -1,0 +1,17 @@
+.ui.block.header {
+  margin-top: 0 !important;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 9;
+}
+
+.ui.block.header a {
+  position: absolute;
+  left: 1rem;
+}
+
+.ui.container {
+  padding-top: 75px;
+}
