@@ -29,6 +29,8 @@
     "@glimmer/tracking": "^1.0.3",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
+    "corber": "1.4.3",
+    "corber-ember-livereload": "^0.0.2",
     "ember-auto-import": "^1.10.1",
     "ember-cli": "~3.24.0",
     "ember-cli-app-version": "^4.0.0",
