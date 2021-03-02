@@ -15,8 +15,7 @@ module.exports = function (defaults) {
         '/mock/(.+)',
         'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css',
       ],
-    }
-
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated

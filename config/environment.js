@@ -4,8 +4,8 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'emberconf-pwa',
     environment,
-    rootURL: '/',
-    locationType: 'hash',
+    rootURL: process.env.EMBER_CLI_ELECTRON ? '' : '/',
+    locationType: process.env.EMBER_CLI_ELECTRON ? 'hash' : 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
