@@ -23,5 +23,4 @@
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
     </platform>
-    <allow-navigation href="http://192.168.31.38:4200" name="ec-nav"/>
 </widget>
