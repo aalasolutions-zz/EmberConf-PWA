@@ -1,118 +1,17 @@
 {{page-title "Details"}}
-<h1 class="ui block header center aligned">
+<h1 class="ui block header center aligned ">
   <LinkTo @route="home">
     <i class="angle left icon"></i>
   </LinkTo>
-  Github Jobs
+  <div class="ellipsis">{{model.title}}</div>
 </h1>
 
 <div class="ui container">
-  {{outlet}}
-  <h1>This is the top</h1>
-  <p>
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %  7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %  7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
-    7S5n for details.
-    uninstalling route<br/><br/>
-    remove app/routes/index.js<br/><br/>
-    remove app/templates/index.hbs<br/><br/>
-    uninstalling route-test<br/><br/>
-    remove tests/unit/routes/index-test.js
-    aamir@Aamirs-MacBook-Pro emberconf-pwa %
+  <img class="ui centered image"  src={{model.company_logo}} />
+  <h1>{{model.title}}</h1>
+  <h3>{{model.type}}</h3>
+  <p><a href={{model.company_url}}>{{model.company}}</a> - {{model.location}}</p>
 
-  </p>
+  <h3>Details</h3>
+  <p>{{html-safe model.description}}</p>
 </div>

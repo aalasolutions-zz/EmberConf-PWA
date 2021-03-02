@@ -1,4 +1,4 @@
-{{page-title "EmberconfPwa"}}
+{{page-title "EmberConf 2021"}}
 
 
 {{outlet}}
@@ -9,14 +9,35 @@
 1. ember new ember-conf
 2. ember g model jobs
 3. ember g component jobs-list -gc
-4. ember install liquid-fire
 
 5. Lets set some UI Layout
+
+set basic structure
 
 6. fix scroll position
 https://github.com/DockYard/ember-router-scroll
 
+
+7. add job details
+ember install ember-cli-string-helpers
+
+to support html-safe helper
+
+
+8. add ui loading
+
+
 6. make it PWA
+https://ember-service-worker.com/
+
+update ember-cli-build.js for revisions and offline cache
+
+'esw-cache-fallback': {
+      patterns: [
+        '/mock/(.+)'
+      ],
+    }
+
 7. Make Mobile App
 8. Make Electorn app.
 9. some other slides--}}
